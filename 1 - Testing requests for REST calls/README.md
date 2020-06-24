@@ -5,3 +5,5 @@ Making REST calls using Python's requests package is an important feature to tes
 ## Retrieve ISS Data
 
 This Choregraphe project is a small project that uses OpenNotify's API endpoints about the International Space Station. It provides a small demonstration of how REST calls can improve Pepper's usability.
+
+<img src="Retrieve%20ISS%20Data/icon.png" width="10%" height="10%" />
