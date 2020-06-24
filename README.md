@@ -8,3 +8,7 @@ CIS 4930 Independent Study: Learning Softbank Robotics' Pepper with Dr. John Lic
 - [ ] Get sound and text from Pepper's microphone(s)
 - [ ] Output sound and speech
 - [ ] Displaying images, videos, etc. on Pepper's tablet
+
+## Repository Todo List
+- [ ] Setup `0 - Getting started` directory for basic information about handling Pepper and Choregraphe
+- [ ] Setup README.md for each project detailing my experiences
