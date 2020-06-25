@@ -1,4 +1,4 @@
-# Testing requests for REST calls
+# Testing `requests` for REST calls
 
 Making REST calls using Python's `requests` package is an important feature to test. Being able to connect to the Internet extends Pepper's capabilities and functionalities. For example, rather than relying on Pepper's built-in speech-to-text services (which only allows developers to set a list of words for pattern matching), developers can instead opt to send audio files to speech-to-text cloud services.
 
