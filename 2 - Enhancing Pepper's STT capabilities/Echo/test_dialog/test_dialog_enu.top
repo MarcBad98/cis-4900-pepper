@@ -1,0 +1,6 @@
+topic: ~test_dialog()
+language: enu
+
+u:(Start) $startRecording=1
+
+u:(Over) $onEndRecording=1 $onStopped=1
