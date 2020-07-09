@@ -12,7 +12,7 @@ This Choregraphe project is a small project that uses [OpenNotify's API endpoint
 
 No goals accomplished
 
-## Choregraph Project Canvas
+## Choregraphe Project Canvas
 
 ![Project Choregraphe Canvas](docs-retrieve-iss-data-project.PNG)
 
