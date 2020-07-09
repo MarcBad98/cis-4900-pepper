@@ -2,7 +2,7 @@
 CIS 4930 Independent Study: Learning Softbank Robotics' Pepper with Dr. John Licato at USF.
 
 ## Goals
-- [ ] Retrieve readings from all of Pepper's sensors
+- [x] Retrieve readings from all of Pepper's sensors
 - [ ] Send commands to all of Pepper's actuators
 - [ ] Get images and videos from Pepper's camera(s)
 - [x] Get sound and text from Pepper's microphone(s)
