@@ -25,7 +25,7 @@ The Get Sensor Data project demonstrates how to:
 
 - [x] Retrieve readings from all of Pepper's sensors
 
-## Choregraph Project Canvas
+## Choregraphe Project Canvas
 
 ![Project Choregraphe Canvas](docs-get-data-project.PNG)
 
