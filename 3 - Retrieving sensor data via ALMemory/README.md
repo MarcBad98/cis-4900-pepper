@@ -4,7 +4,7 @@ In order to interact with the real world, Pepper has several built-in sensors to
 
 ## Get Sensor Data
 
-This Choregraphe project is a small project that shows three ways a developer can access sensor data from Pepper: (1) using the _get data_ Choregraphe box, (2) using data memory listeners, and (3) using the `getData(key)` method in a Python Box Script.
+This Choregraphe project is a small project that shows three ways a developer can access sensor data from Pepper: (1) using the _get data_ Choregraphe box, (2) using data memory listeners, and (3) using the `getData(key)` method in the `ALMemory` module in a Python Box Script.
 
 <img src="Get%20Sensor%20Data/icon.png" width="10%" height="10%" />
 
