@@ -8,6 +8,15 @@ This Choregraphe project is a small project that uses [Google Cloud Speech-to-Te
 
 <img src="Echo/icon.png" width="10%" height="10%" />
 
+## Goals
+
+- [x] Get sound and text from Pepper's microphone(s)
+- [x] Output sound and speech
+
+## Choregraphe Project Canvas
+
+![Choregraphe Project Canvas](docs-echo-project.PNG)
+
 ## Challenges
 
 Even though Choregraphe provides several built-in boxes with pre-defined functions, this does not mean that the developer is constrained to those functionalities. These built-in boxes are essentially Python box scripts that are specialized for one task. By understanding the Python that the boxes run, developers can modify these built-in boxes for their own needs. Take the following example:
@@ -19,10 +28,6 @@ The image above shows the inner workings of an unmodified _record sound_ Choregr
 <img src="docs-modified-record-sound-box.PNG" />
 
 The image above shows the inner workings of the modified _record sound_ Choregraphe box in the Echo Choregraphe project. See that rather than the _wait_ Choregraphe box determining when the recording will stop, we instead added a new input to this box which directly stops the recording. In the Echo project, when the human says "Over", the recording is terminated and the audio file saved.
-
-The Echo project demonstrates how to:
-- [x] Get sound and text from Pepper's microphone(s)
-- [x] Output sound and speech
 
 ## Code
 
