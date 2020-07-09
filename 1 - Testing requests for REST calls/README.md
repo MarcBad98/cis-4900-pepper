@@ -8,6 +8,14 @@ This Choregraphe project is a small project that uses [OpenNotify's API endpoint
 
 <img src="Retrieve%20ISS%20Data/icon.png" width="10%" height="10%" />
 
+## Goals
+
+No goals accomplished
+
+## Choregraph Project Canvas
+
+![Project Choregraphe Canvas](docs-retrieve-iss-data-project.PNG)
+
 ## Challenges
 
 One of the biggest challenges when it comes to developing applications for Pepper is that access to the physical robot is almost always required. The developer needs to know that their application actually works with Pepper, not just within their own computers (e.g., using Choregraphe, the Python/C++ SDKs, etc.). For instance, Choregraphe, when not connected with Pepper, has its own installation of Python 2.7 that **does not have the same Python dependencies installed as within Pepper** (since Choregraphe is also used for NAO). This challenge is an easy obstacle to overcome so long as the developer has access to the robot or is developing with the same Python environment.
