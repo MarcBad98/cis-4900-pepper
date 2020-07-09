@@ -21,8 +21,6 @@ This Choregraphe project is a small project that shows three ways a developer ca
 
 ## Goals
 
-The Get Sensor Data project demonstrates how to:
-
 - [x] Retrieve readings from all of Pepper's sensors
 
 ## Choregraphe Project Canvas
