@@ -1,0 +1,6 @@
+env/
+venv/
+__pycache__/
+*.py[cod~]
+
+7 - Interface with Django/pepper_backend/pepper_backend/static

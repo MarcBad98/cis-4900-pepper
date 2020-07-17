@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WebSocket Demonstration</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/buefy/dist/buefy.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+    <link rel="stylesheet" href="https://cdn.materialdesignicons.com/5.3.45/css/materialdesignicons.min.css">
+    <script src="https://unpkg.com/buefy/dist/buefy.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reconnecting-websocket/1.0.0/reconnecting-websocket.min.js"></script>
+  </head>
+  <body>
+    <section class="section">
+      <div class="container">
+        <p class="title">WebSockets Demonstration</p>
+        <p class="subtitle">a place to test WebSocket connections and interactions</p>
+      </div>
+    </section>
+    <section class="section">
+      <div id="app" class="container">
+        <ul>
+          <li v-for="text in activeTextList" v-bind:key="text.id">
+            [[ text.text ]]
+          </li>
+        </ul>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="content has-text-centered">
+        end of page
+      </div>
+    </footer>
+  </body>
+  <script>
+    var app = new Vue({
+      delimiters: ['[[', ']]'],
+      el: '#app',
+      data() {
+        return {
+          textList: [],
+        };
+      },
+      computed: {
+        activeTextList() {
+          return this.textList.filter((text) => text.active);
+        },
+      },
+      created() {
+        fetch('http://127.0.0.1:8000/api/list')
+          .then(response => response.json())
+          .then(data => this.textList = data);
+        const socket = new ReconnectingWebSocket('ws://127.0.0.1:8000/ws/pepper-tablet');
+        socket.onmessage = (event) => {
+          const data = JSON.parse(event.data);
+          const idx = this.textList.findIndex((text) => text.id === data.recognizedText.id);
+          if (data.op === 'SAVE' && idx === -1) {
+            this.textList.push(data.recognizedText);
+          } else if (data.op === 'SAVE' && idx !== -1) {
+            this.textList.splice(idx, 1, data.recognizedText);
+          } else if (data.op === 'DELETE') {
+            this.textList.splice(idx, 1);
+          }
+        };
+      },
+    });
+  </script>
+</html>
