@@ -10,34 +10,15 @@ import db_app.models as models
 class RecognizedTextAdminModel(admin.ModelAdmin):
 
     date_hierarchy = 'date'
-    fields = ('id', 'date', 'active', 'text', )
-    actions = ['mark_active', 'mark_inactive', ]
+    list_display = ('text', 'active', )
+    list_filter = ('active', )
+    search_fields = ('text', )
+    fields = ('id', 'date', 'text', 'active',  )
+    readonly_fields = ('id', 'date', )
+    actions = ['export_as_json', ]
 
     def export_as_json(self, request, queryset):
         response = HttpResponse(content_type='application/json')
+        response['Content-Disposition'] = 'attachment; filename=export.json'
         serializers.serialize('json', queryset, stream=response)
         return response
-
-    def mark_active(self, request, queryset):
-        updated = queryset.update(active=True)
-        self.message_user(
-            request,
-            ngettext(
-                'Successfully marked text as active.',
-                'Successfully marked texts as active.',
-                updated,
-            ),
-            messages.SUCCESS,
-        )
-
-    def mark_inactive(self, request, queryset):
-        updated = queryset.update(active=False)
-        self.message_user(
-            request,
-            ngettext(
-                'Successfully marked text as inactive.',
-                'Successfully marked texts as inactive.',
-                updated,
-            ),
-            messages.SUCCESS,
-        )

@@ -25,7 +25,7 @@ SECRET_KEY = 'e3$tef1_^u*tft-64-ow8^2d)9vm93c*)gkc%!xvfyj&wfn4-b'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = ['127.0.0.1', '192.168.254.29']
 
 
 # Application definition
@@ -82,8 +82,12 @@ ASGI_APPLICATION = 'pepper_backend.routing.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'pepper',
+        'USER': 'pepper',
+        'PASSWORD': 'pepper',
+        'HOST': 'postgres',
+        'PORT': 5432,
     }
 }
 
@@ -92,14 +96,12 @@ DATABASES = {
 # https://channels.readthedocs.io/en/latest/topics/channel_layers.html#redis-channel-layer
 
 CHANNEL_LAYERS = {
-    # "default": {
-    #     "BACKEND": "channels_redis.core.RedisChannelLayer",
-    #     "CONFIG": {
-    #         "hosts": [("127.0.0.1", 6379)],
-    #     },
-    # },
-    "default": {
-        "BACKEND": "channels.layers.InMemoryChannelLayer"
+    'default': {
+        'BACKEND': 'channels.layers.InMemoryChannelLayer',
+        # 'BACKEND': 'channels_redis.core.RedisChannelLayer',
+        # 'CONFIG': {
+        #     'hosts': [('redis', 6379)],
+        # },
     },
 }
 
