@@ -1,0 +1,18 @@
+topic: ~Reply()
+language: enu
+
+u:(e:onStart) "Hello, my name is Pepper. This demo shows how developers can connect to Django to extend my capabilities! Would you like to start the demo?"
+
+u:(e:onAgain) "Would you like to do that again?"
+
+concept:(affirmative) ["yes" "ok" "sure" "sure thing"]
+
+concept:(negative) ["no" "no thanks" "nope"]
+
+concept:(negativeReply) ["no rush" "take your time" "no worries"]
+
+u:(~affirmative) "Please say anything for the next ten seconds. I will record and transcribe to text. Please start now." $onStartRecording=1
+
+u:(~negative) ~negativeReply
+
+u:(stop) $onStopped=1

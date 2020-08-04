@@ -25,12 +25,15 @@ SECRET_KEY = 'e3$tef1_^u*tft-64-ow8^2d)9vm93c*)gkc%!xvfyj&wfn4-b'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', '192.168.254.29']
+ALLOWED_HOSTS = ['192.168.254.29']
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    # Django admin UI theme
+    'jazzmin',
+    # built-in Django apps
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -103,6 +106,33 @@ CHANNEL_LAYERS = {
         #     'hosts': [('redis', 6379)],
         # },
     },
+}
+
+
+# Django Jazzmin UI Theme Configurations
+# https://django-jazzmin.readthedocs.io/
+
+JAZZMIN_SETTINGS = {
+    'site_title': 'Pepper Backend Admin',
+    'site_header': 'Pepper Backend',
+    'site_logo': None,
+    'welcome_sign': 'Welcome to the Pepper Backend Demonstration!',
+    'copyright': 'Marc\'s Totally Legit Copyright',
+    'search_model': 'auth.User',
+    'user_avatar': None,
+    'topmenu_links': [
+        {
+            'name': 'Home',
+            'url': 'admin:index',
+        },
+        {
+            'name': 'Jazzmin UI Theme Docs',
+            'url': 'https://django-jazzmin.readthedocs.io/',
+            'new_window': True,
+        },
+    ],
+    'show_sidebar': True,
+    'navigation_expanded': True,
 }
 
 

@@ -12,7 +12,7 @@ channel_layer = get_channel_layer()
 class RecognizedText(models.Model):
 
     class Meta:
-        verbose_name = 'Pepper\'s Voice-recognized Text'
+        verbose_name = 'Recognized Text'
 
     active = models.BooleanField(default=False)
     date = models.DateField(auto_now=True)
