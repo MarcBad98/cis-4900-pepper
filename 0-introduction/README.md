@@ -30,11 +30,11 @@ Choregraphe provides a way to program Pepper using a drag-and-drop flowchart gra
 With sparse documentation from Aldebaran and Softbank, the goal for this independent study project is to generate documentation (this GitHub repository) detailing how to accomplish the following:
 
 - [x] Retrieve readings from all of Pepper's sensors
-- [ ] Send commands to all of Pepper's actuators
+- [x] Send commands to all of Pepper's actuators
 - [ ] Get images and videos from Pepper's camera(s)
 - [x] Get sound and text from Pepper's microphone(s)
 - [x] Output sound and speech
-- [ ] Displaying images, videos, etc. on Pepper's tablet
+- [x] Displaying images, videos, etc. on Pepper's tablet
 
 Moreover, the final module will be a small project showing how to integrate [Google Cloud Speech-To-Text API](https://cloud.google.com/speech-to-text), [Django](https://www.djangoproject.com/), and Pepper together to collect and store text transcribed from audio.
 

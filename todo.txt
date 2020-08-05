@@ -1,0 +1,2 @@
+- finish 8-cameras
+- write documentation for 9-interface-with-django

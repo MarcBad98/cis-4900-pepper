@@ -8,7 +8,7 @@ This Choregraphe project is a small project that shows three ways a developer ca
 
 <img src="Get%20Sensor%20Data/icon.png" width="10%" height="10%" />
 
-1. Choregraphe has a built-in "Get Data" Choregraphe box. By providing the actuator's or sensor's key as a parameter, the box will output the associated value when triggered.
+1. Choregraphe has a built-in "Get Data" Choregraphe box (found in Programming > Memory in the box library panel). By providing the actuator's or sensor's key as a parameter, the box will output the associated value when triggered.
 
 ![where to find the box](img/docs-get-data-box-library.PNG)
 
@@ -33,7 +33,7 @@ The greatest challenge here was fighting the documentation itself. While all of 
 
 ## Code
 
-<details><summary>Retrieve Battery Charge Python Box Script</summary>
+<details><summary>Retrieve Battery Charge Python Box</summary>
 
 ```python
 class MyClass(GeneratedClass):
@@ -66,7 +66,7 @@ class MyClass(GeneratedClass):
 
 </details>
 
-<details><summary>Rertrieve Bumper Toggle Python Box Script</summary>
+<details><summary>Rertrieve Bumper Toggle Python Box</summary>
 
 ```python
 class MyClass(GeneratedClass):

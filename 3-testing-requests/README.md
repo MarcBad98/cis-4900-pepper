@@ -22,6 +22,12 @@ One of the biggest challenges when it comes to developing applications for Peppe
 
 To check what Python packages are installed on Pepper, you can [access Pepper via SSH](http://doc.aldebaran.com/2-4/dev/tools/opennao.html). The default username and password are both 'nao' assuming these credentials were not changed. Pepper comes equipped with a Linux distribution, so familiarity with the command line is useful; however, Softbank Robotics has **disabled the ability for developers to download and install anything** onto Pepper. Therefore, the developer cannot install new Python dependencies. Instead, these two workarounds from [StackOverflow](https://stackoverflow.com/questions/45799150/pepper-robot-upload-python-modules) and [AboutRobots](http://www.about-robots.com/how-to-import-python-files-in-your-pepper-apps.html) suggest uploading the files for the Python dependency along with the project files, using Python's `os` library to append your uploaded files to Pepper's Python path.
 
+## Logger
+
+Reviewing the code below, you may have noticed the lines `self.logger.info(r)`; you may also notice the "Log" Choregraphe box (found in Programming > Tools in the box library panel). As a way to debug the program, you can log objects to inspect them. You can see the logs in the log viewer panel.
+
+![Log Viewer Panel](img/ui-logger-panel.PNG)
+
 ## Code
 
 <details><summary>ISS Current Location Python Box</summary>
