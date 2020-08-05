@@ -1,4 +1,4 @@
-# Extending the `requests` package
+# Enhancing STT Capabilities
 
 After learning that `requests` is available on Pepper's local machine, the first capability to try to enhance was her speech-to-text functions. Currently, Pepper has a built-in speech-to-text engine that only allows recognition of words from a pre-defined list (using pattern matching). To circumvent defining a set vocabulary, developers can take advantage of Cloud computing and services.
 
@@ -21,11 +21,11 @@ This Choregraphe project is a small project that uses [Google Cloud Speech-to-Te
 
 Even though Choregraphe provides several built-in boxes with pre-defined functions, this does not mean that the developer is constrained to those functionalities. These built-in boxes are essentially Python box scripts that are specialized for one task. By understanding the Python that the boxes run, developers can modify these built-in boxes for their own needs. Take the following example:
 
-<img src="img/docs-unmodified-record-sound-box.PNG" />
+![Unmodified "Record Sound" Box](img/docs-unmodified-record-sound-box.PNG)
 
 The image above shows the inner workings of an unmodified "Record Sound" Choregraphe box. From the developer-set parameters, this box first retrieves the audio file's name. The box then starts recording audio and activates the "Wait" Choregraphe box, which activates its output after a specified amount of time. By analyzing this structure, see that this entire box records audio for a pre-determined time. But what if we wanted to record audio for an unspecified amount of time? Rather than starting from scratch, this Choregraphe box can be modified to achieve our goal.
 
-<img src="img/docs-modified-record-sound-box.PNG" />
+![Modified "Record Sound" Box](img/docs-modified-record-sound-box.PNG)
 
 The image above shows the inner workings of the modified "Record sound" Choregraphe box in the Echo Choregraphe project. See that rather than the "Wait" Choregraphe box determining when the recording will stop, we instead added a new input to this box which directly stops the recording. In the Echo project, when the human says "Over", the recording is terminated and the audio file saved.
 
