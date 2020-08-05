@@ -19,7 +19,7 @@ To create a box:
 - If a developer wants to use a built-in box... Find the box in the box library panel and then drag and drop the box onto the canvas.
 - If a developer wants to create a custom box... Right click, hover over "Create a new box", and then choose between Python, Dialog, or Diagram depending on what kind of logic is required.
 
-<img src="img/ui-right-click.png" />
+![right click options](img/ui-right-click.PNG)
 
 Python boxes are controlled by Python code. Although Choregraphe's built-in boxes provides logic boxes (loops, if-clauses, etc.), it is recommended to try and put all logic within a Python box instead. By using the built-in boxes, the canvas can get cluttered and become difficult to understand; too many boxes on the canvas. If the developer expects complex logic or a functionality not provided by a built-in Choregraphe box, use a Python box.
 
@@ -27,7 +27,7 @@ Dialog boxes should be used when the developer expects a conversation between Pe
 
 When a project begins to get big, the developer may need to start looking at creating diagram boxes. These boxes allow defining the logic using other boxes (nested box logic). Below is the internal logic for the "Record Sound" box.
 
-<img src="img/ui-nested-box.png" />
+![nested box logic example](img/ui-nested-box.PNG)
 
 When there is a need to break up the code into smaller, more manageable components or when designing with reusability in mind, then the developer should consider using diagram boxes.
 
