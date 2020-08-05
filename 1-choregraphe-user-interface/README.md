@@ -4,7 +4,7 @@ This module gives a brief overview of the Choregraphe user interface. This will 
 
 The image below is an example of what a Choregraphe project may look like (this is the Choregraphe project from the final module).
 
-![ui overview](img/ui-overview.png)
+![ui overview](img/ui-overview.PNG)
 
 ## Reference
 
@@ -20,7 +20,7 @@ Watch [this 5-part YouTube video playlist by Daniel Schofield](https://www.youtu
 
 ## Header
 
-![header menu](img/ui-header-menu.png)
+![header menu](img/ui-header-menu.PNG)
 
 The header provides easy access to common tasks and functions:
 
@@ -32,25 +32,25 @@ Below these menu sets are the most common tasks and functions (provided as a con
 
 ## Canvas
 
-![canvas panel](img/ui-canvas.png)
+![canvas panel](img/ui-canvas.PNG)
 
 The canvas panel will be where all your project's logic will be found. More will be said about the logic in the next module.
 
 ## Project Files
 
-![project files panel](img/ui-project-files.png)
+![project files panel](img/ui-project-files.PNG)
 
 The project files panel will be where the developer can view all files for the Choregraphe project. The `behavior_1/behavior.xar` file represents the project's canvas. At the bottom, you can switch between `Project files` and `Project objects`; project files was already discussed, so project objects lists all boxes in the entire project (disregarding the current canvas being displayed).
 
 ## Box Library
 
-![box library panel](img/ui-box-library.png)
+![box library panel](img/ui-box-library.PNG)
 
 The box library panel displays all boxes available to Choregraphe. The libraries displayed above are all built-in Choregraphe libraries. Here, you can import your own box library (out of scope for this independent study project).
 
 ## The Right-Hand Side
 
-![right-hand side panels](img/ui-right-panels.png)
+![right-hand side panels](img/ui-right-panels.PNG)
 
 The right-hand side of the interface consists of the robot view and inspector panels.
 
