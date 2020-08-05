@@ -46,7 +46,7 @@ My current workaround is, before setting the keyframes:
 ```python
 import naoqi
 from naoqi import ALProxy
-al = ALProxy("ALAutonomousLife", "192.168.1.7", 9559)
+al = ALProxy("ALAutonomousLife", "192.168.254.39", 9559)
 al.stopAll()
 ```
 
