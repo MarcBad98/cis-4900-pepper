@@ -18,15 +18,13 @@ No goals accomplished
 
 ## Challenges
 
-One of the biggest challenges when it comes to developing applications for Pepper is that access to the physical robot is almost always required. The developer needs to know that their application actually works with Pepper, not just within their own computers (e.g., using Choregraphe, the Python/C++ SDKs, etc.). For instance, Choregraphe, when not connected with Pepper, has its own installation of Python 2.7 that **does not have the same Python dependencies installed as within Pepper** (since Choregraphe is also used for NAO). This challenge is an easy obstacle to overcome so long as the developer has access to the robot or is developing with the same Python environment.
+One of the biggest challenges when it comes to developing applications for Pepper is that access to the physical robot is almost always required. The developer needs to know that their application actually works with Pepper, not just within their own computers (e.g., using Choregraphe, the Python/C++ SDKs, etc.). For instance, Choregraphe, when not connected with Pepper, has its own installation of Python 2.7 that **does not have the same Python dependencies installed as within Pepper**. This challenge is an easy obstacle to overcome so long as the developer has access to the robot or is developing with the same Python environment.
 
-To check what Python packages are installed on Pepper, you can [access Pepper via SSH](http://doc.aldebaran.com/2-4/dev/tools/opennao.html). The default username and password are both 'nao', assuming these credentials were not changed. Pepper comes equipped with a Linux distribution, so familiarity with the command line is useful; however, Softbank Robotics has **disabled the ability for developers to download and install anything** onto Pepper. Therefore, the developer cannot install new Python dependencies. Instead, these two workarounds from [StackOverflow](https://stackoverflow.com/questions/45799150/pepper-robot-upload-python-modules) and [AboutRobots](http://www.about-robots.com/how-to-import-python-files-in-your-pepper-apps.html) suggest uploading the files for the Python dependency along with the project files, using Python's `os` library to append your uploaded files to Pepper's Python path.
+To check what Python packages are installed on Pepper, you can [access Pepper via SSH](http://doc.aldebaran.com/2-4/dev/tools/opennao.html). The default username and password are both 'nao' assuming these credentials were not changed. Pepper comes equipped with a Linux distribution, so familiarity with the command line is useful; however, Softbank Robotics has **disabled the ability for developers to download and install anything** onto Pepper. Therefore, the developer cannot install new Python dependencies. Instead, these two workarounds from [StackOverflow](https://stackoverflow.com/questions/45799150/pepper-robot-upload-python-modules) and [AboutRobots](http://www.about-robots.com/how-to-import-python-files-in-your-pepper-apps.html) suggest uploading the files for the Python dependency along with the project files, using Python's `os` library to append your uploaded files to Pepper's Python path.
 
 ## Code
 
-Note that whenever importing libraries, these import statements are found within the functions rather than at the module level.
-
-<details><summary>ISS Current Location Python Box Script</summary>
+<details><summary>ISS Current Location Python Box</summary>
 
 ```python
 class MyClass(GeneratedClass):
@@ -72,7 +70,7 @@ class MyClass(GeneratedClass):
 
 </details>
 
-<details><summary>ISS Current Astronauts Python Box Script</summary>
+<details><summary>ISS Current Astronauts Python Box</summary>
 
 ```python
 class MyClass(GeneratedClass):
@@ -121,6 +119,10 @@ class MyClass(GeneratedClass):
 ## References
 
 As of Summer 2020, these are the packages installed on Pepper:
+
+```
+$ pip freeze
+```
 
 ```
 Pillow==3.1.1
