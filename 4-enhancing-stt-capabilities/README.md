@@ -31,7 +31,7 @@ The image above shows the inner workings of the modified "Record sound" Choregra
 
 ## Code
 
-<details><summary>Google STT Cloud Service Python Box Script</summary>
+<details><summary>Google STT Cloud Service Python Box</summary>
 
 ```python
 class MyClass(GeneratedClass):
