@@ -34,7 +34,7 @@ Below these menu sets are the most common tasks and functions (provided as a con
 
 ![Canvas Panel](img/ui-canvas.PNG)
 
-The canvas panel will be where all your project's logic will be found, so be prepared to spend much of your time in this panel. In the previous module, Choregraphe provides a flowchart interface. A Choregraphe project's flow of control moves from left to right, activating a box's functions when its corresponding control lines are triggered. More will be said about the logic in the next module.
+The canvas panel will be where all your project's logic will be found, so be prepared to spend much of your time in this panel. Mentioned in the prior module, Choregraphe provides a flowchart interface. A Choregraphe project's flow of control moves from left to right, activating a box's functions when its corresponding control lines are triggered. More will be said about the logic in the next module.
 
 ## Project Files
 
@@ -62,6 +62,6 @@ When you have a box selected, you can view its properties in the inspector panel
 
 ![UI Overview Example 2](img/ui-overview-2.PNG)
 
-At the launch of Choregraphe, the script and dialog panels may not show up by default. If you do not see the panels above, check that the panels are being shown in the `View` menu set. The script panel is where Python and QiChat scripts are shown: double-click on Python boxes to see Python script; double-click on `myDirector/*.top` in the project files panel to see QiChat scripts.
+At the launch of Choregraphe, the script and dialog panels may not show up by default. If you do not see the panels above, check that the panels are being shown in the `View` menu set. The script panel is where Python and QiChat scripts are shown: double-click on Python boxes to see Python script; double-click on `someDirectory/*.top` in the project files panel to see QiChat scripts.
 
 If you are working with Pepper's voice recognition (e.g., when working with dialog boxes), it would be especially useful to have a transcript of your conversations for debugging. The dialog panel offers such functionality. Not only does the panel transcribe text, it appends the confidence value for every snippet of human speech. If you are testing on a virtual robot, you can instead type text at the bottom of the panel, hitting the enter button on your keyboard to send text to Pepper.
