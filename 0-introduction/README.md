@@ -4,7 +4,7 @@ Pepper is a social robot (made by Aldebaran, later bought by Softbank) used in c
 
 Thank you, Dr. John Licato and the Advancing Machine and Human Reasoning (AMHR) research lab, for letting me use Pepper over the summer semester.
 
-![AMHR Logo](img/amhr-logo.png)
+[![AMHR Logo](img/amhr-logo.png)](https://sites.google.com/view/amhr/home?authuser=0)
 
 ## What is Choregraphe?
 
@@ -49,3 +49,9 @@ The following ideas are beyond the scope of this independent study project, but 
 > Choregraphe is not the only way to program Pepper. Softbank has [SDKs](http://doc.aldebaran.com/2-5/dev/programming_index.html) in several programming languages: C++, Python, and JavaScript to name a few. Programming using these SDKs may be a natural next step after learning how to use Choregraphe to program Pepper.
 
 > What seems to be new documentation for QiSDK emerged this year 2020. What's promising is that, not only is it up to date, but it moves away from Aldebaran documentation and towards Softbank documentation (Aldebaran developed Pepper and NAO before the company's acquisition by Softbank). Developing using QiSDK on the Android Studio IDE may be a promising project in the future. Relevant references:  [Softbank Robotics Developer Center](https://developer.softbankrobotics.com/pepper-qisdk) and [QiSDK](https://qisdk.softbankrobotics.com/sdk/doc/pepper-sdk/index.html).
+
+## Author
+
+My name is Marc Gabriel N. Badilla. At the time of writing this, I am a fourth-year computer science student at the University of South Florida (USF).
+
+[<img src="img/linkedin-logo.png" width="10%" height="10%" />](https://www.linkedin.com/in/marcbad/)
