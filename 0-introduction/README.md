@@ -52,6 +52,4 @@ The following ideas are beyond the scope of this independent study project, but 
 
 ## Author
 
-My name is Marc Gabriel N. Badilla. At the time of writing this, I am a fourth-year computer science student at the University of South Florida (USF).
-
-[<img src="img/linkedin-logo.png" width="10%" height="10%" />](https://www.linkedin.com/in/marcbad/)
+My name is Marc Gabriel N. Badilla ([LinkedIn Profile](https://www.linkedin.com/in/marcbad/)). At the time of writing this, I am a fourth-year computer science student at the University of South Florida (USF).
