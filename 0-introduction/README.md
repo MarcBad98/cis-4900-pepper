@@ -31,7 +31,7 @@ With sparse documentation from Aldebaran and Softbank, the goal for this indepen
 
 - [x] Retrieve readings from all of Pepper's sensors
 - [x] Send commands to all of Pepper's actuators
-- [ ] Get images and videos from Pepper's camera(s)
+- [x] Get images and videos from Pepper's camera(s)
 - [x] Get sound and text from Pepper's microphone(s)
 - [x] Output sound and speech
 - [x] Displaying images, videos, etc. on Pepper's tablet
@@ -49,6 +49,8 @@ The following ideas are beyond the scope of this independent study project, but 
 > Choregraphe is not the only way to program Pepper. Softbank has [SDKs](http://doc.aldebaran.com/2-5/dev/programming_index.html) in several programming languages: C++, Python, and JavaScript to name a few. Programming using these SDKs may be a natural next step after learning how to use Choregraphe to program Pepper.
 
 > What seems to be new documentation for QiSDK emerged this year 2020. What's promising is that, not only is it up to date, but it moves away from Aldebaran documentation and towards Softbank documentation (Aldebaran developed Pepper and NAO before the company's acquisition by Softbank). Developing using QiSDK on the Android Studio IDE may be a promising project in the future. Relevant references:  [Softbank Robotics Developer Center](https://developer.softbankrobotics.com/pepper-qisdk) and [QiSDK](https://qisdk.softbankrobotics.com/sdk/doc/pepper-sdk/index.html).
+
+> `8-cameras` Project Idea: Maybe a project that uses Pepper to take pictures and record videos, sending them to a Django backend for storage? Then, in a gallery or YouTube-esque interface, show these on a webpage.
 
 ## Author
 
